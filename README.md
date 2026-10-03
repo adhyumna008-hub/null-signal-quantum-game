@@ -43,7 +43,7 @@ Unity **6000.6.4f1**, Universal Render Pipeline, Unity Input System, TextMeshPro
 
 ## Run
 
-Hosted link: **[ADD SUBMISSION URL]**
+Hosted link: **https://null-signal-quantum-game.vercel.app**
 
 In Unity: **Tools → NULL SIGNAL → Build Phase 7 Final Game** generates the connected `Assets/Scenes/MainGame.unity` scene, including its animated menu, backstory, gameplay, pause and ending. Previous scenes are archived/preserved. **Tools → NULL SIGNAL → Build Final WebGL** creates `Builds/WebGL/`.
 
