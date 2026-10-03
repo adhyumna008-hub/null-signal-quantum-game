@@ -1,0 +1,257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b117c3330244f19530521e58da7510, type: 3}
+  m_Name: NULL SIGNAL Voiceover
+  m_EditorClassIdentifier: Assembly-CSharp::NullSignal.Presentation.VoiceoverLibrary
+  lines:
+  - speaker: LUBNA
+    text: You saw the signal rise, fall, and return. More amplification is not always better.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Warm, lower female Indian English register; reflective and observant, then quietly unsettled.
+  - speaker: TARA
+    text: Reactor stable. Security lockdown ahead. Stay ready.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Emergency impact detected.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: 'Anirudh? If you''re conscious, move.
+
+      That compartment is losing pressure.'
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Manual release still has power.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Local power is failing. Follow that cyan signal.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANVESH
+    text: Authorization fragmented. Four candidate states.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Neutral, concise interface voice; precise but intelligible and unhurried. Distinct from Tara.
+  - speaker: TARA
+    text: Mark the desired signature. Watch what changes.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANANYA
+    text: Watch the wave direction. Then try it yourself.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Mature Indian English scientist; controlled authority, curiosity giving way to restrained alarm. Distinct from Lubna.
+  - speaker: TARA
+    text: Eight possibilities this time. The same procedure applies.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Security lockdown. Keep moving, Anirudh.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANVESH
+    text: Reactor control fragmented. Eight candidate states.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Neutral, concise interface voice; precise but intelligible and unhurried. Distinct from Tara.
+  - speaker: TARA
+    text: Track the signal through several search cycles.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: A larger wave. A higher chance.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Manual release accepted. Keep moving.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANVESH
+    text: Desired power state measured. Local systems restored.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Neutral, concise interface voice; precise but intelligible and unhurried. Distinct from Tara.
+  - speaker: ANIRUDH
+    text: So we didn't check all four.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Male Indian English retrieval specialist; grounded, breath-aware urgency and relief, never theatrical shouting.
+  - speaker: TARA
+    text: No.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: We changed the odds.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANANYA
+    text: Signature marked. The next lab is open.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Mature Indian English scientist; controlled authority, curiosity giving way to restrained alarm. Distinct from Lubna.
+  - speaker: TARA
+    text: Calibration accepted. Reactor control is ahead.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANANYA
+    text: Core disabled. That violet interference is coming from the next sector.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Mature Indian English scientist; controlled authority, curiosity giving way to restrained alarm. Distinct from Lubna.
+  - speaker: LUBNA
+    text: The manifestations have dispersed. The station is quiet again... for now.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Warm, lower female Indian English register; reflective and observant, then quietly unsettled.
+  - speaker: TARA
+    text: Reactor stabilized. Hold here, Anirudh.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: CHHAYA
+    text: Search.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Very quiet, unfamiliar resonant voice; one-word challenge, minimal processing, readable consonants.
+  - speaker: TARA
+    text: Anirudh...
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: You know what to do.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANVESH
+    text: Eight manifestations. Shield reformed.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Neutral, concise interface voice; precise but intelligible and unhurried. Distinct from Tara.
+  - speaker: ANVESH
+    text: Search space expanded. Eight states.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Neutral, concise interface voice; precise but intelligible and unhurried. Distinct from Tara.
+  - speaker: TARA
+    text: "Panel failure. Move clear \u2014 Space to dodge."
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Classical diagnostics can test the sectors individually.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANIRUDH
+    text: No time.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Male Indian English retrieval specialist; grounded, breath-aware urgency and relief, never theatrical shouting.
+  - speaker: TARA
+    text: Then don't search them one by one.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Target amplitude collapsing.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Emergency craft ready. East passage. Move.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANVESH
+    text: Quantum search interface restored.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Neutral, concise interface voice; precise but intelligible and unhurried. Distinct from Tara.
+  - speaker: TARA
+    text: Good. You'll need that.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: TARA
+    text: Checkpoint restored. You're still in the same sector.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: LUBNA
+    text: Background search complete.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Warm, lower female Indian English register; reflective and observant, then quietly unsettled.
+  - speaker: ANANYA
+    text: Again.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Mature Indian English scientist; controlled authority, curiosity giving way to restrained alarm. Distinct from Lubna.
+  - speaker: LUBNA
+    text: That signal was barely there.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Warm, lower female Indian English register; reflective and observant, then quietly unsettled.
+  - speaker: ANANYA
+    text: One more iteration.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Mature Indian English scientist; controlled authority, curiosity giving way to restrained alarm. Distinct from Lubna.
+  - speaker: UNKNOWN SIGNAL
+    text: You found me.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Low, intimate and controlled; ominous through calm delivery and pauses, not shouting or heavy distortion.
+  - speaker: TARA
+    text: Emergency retrieval protocol active.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Clear, calm female assistant; empathetic human-like phrasing, concise and practical under pressure.
+  - speaker: ANIRUDH
+    text: Find the Core. Shut it down.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Male Indian English retrieval specialist; grounded, breath-aware urgency and relief, never theatrical shouting.
+  - speaker: ANIRUDH
+    text: I destroyed the Array.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Male Indian English retrieval specialist; grounded, breath-aware urgency and relief, never theatrical shouting.
+  - speaker: UNKNOWN SIGNAL
+    text: You destroyed one.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Low, intimate and controlled; ominous through calm delivery and pauses, not shouting or heavy distortion.
+  - speaker: UNKNOWN SIGNAL
+    text: Now we know how to search back.
+    clip: {fileID: 0}
+    volume: 0.85
+    direction: Low, intimate and controlled; ominous through calm delivery and pauses, not shouting or heavy distortion.

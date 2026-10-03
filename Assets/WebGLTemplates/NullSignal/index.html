@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#161e22">
+  <title>NULL SIGNAL — Astra-7</title>
+  <style>
+    * { box-sizing:border-box; } html,body { margin:0;width:100%;height:100%;overflow:hidden;background:#131a1f;color:#ece8dd;font:16px system-ui,sans-serif; }
+    #game { position:relative;width:100%;height:100%;background:radial-gradient(ellipse at center,#303e43,#131a1f 70%); }
+    canvas { width:100%;height:100%;display:block;outline:none; }
+    #loading { position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center;background:#131a1f; }
+    .eyebrow { letter-spacing:.2em;color:#c49368;font-size:12px; } h1 { font-size:clamp(36px,6vw,76px);letter-spacing:.13em;font-weight:500;margin:22px 0; }
+    #track { width:min(480px,80vw);height:3px;background:#3a4548;margin:24px 0; } #progress { width:0;height:100%;background:#8bdddc;transition:width .16s; }
+    #message { max-width:560px;line-height:1.6;color:#bcc8c8; } #fullscreen { position:absolute;right:16px;bottom:12px;border:1px solid #6b777c;background:#172226cc;color:#dce9e6;padding:9px 13px;cursor:pointer;z-index:2;font:12px system-ui; }
+    #fullscreen:hover { background:#385254; } button:focus-visible { outline:2px solid #e9b16f;outline-offset:3px; }
+  </style>
+</head>
+<body>
+<main id="game">
+  <canvas id="unity-canvas" width="1920" height="1080" tabindex="0" aria-label="NULL SIGNAL 3D game"></canvas>
+  <div id="loading" role="status"><div class="eyebrow">ASTRA-7 · QUANTUM RESEARCH STATION</div><h1>NULL SIGNAL</h1><div id="track"><div id="progress"></div></div><div id="message">Restoring the station link…<br>Desktop keyboard and mouse recommended.</div></div>
+  <button id="fullscreen" type="button">FULL SCREEN</button>
+</main>
+<script>
+  const canvas=document.getElementById('unity-canvas');
+  const config={
+    dataUrl:'Build/{{{ DATA_FILENAME }}}',frameworkUrl:'Build/{{{ FRAMEWORK_FILENAME }}}',codeUrl:'Build/{{{ CODE_FILENAME }}}',
+    streamingAssetsUrl:'StreamingAssets',companyName:'Astra-7',productName:'NULL SIGNAL',productVersion:'1.0',
+    matchWebGLToCanvasSize:true,
+    showBanner:(text,type)=>{if(type==='error'){document.getElementById('loading').style.display='flex';document.getElementById('message').textContent=text;}}
+  };
+  const loader=document.createElement('script');loader.src='Build/{{{ LOADER_FILENAME }}}';
+  loader.onload=()=>createUnityInstance(canvas,config,value=>{document.getElementById('progress').style.width=Math.round(value*100)+'%';})
+    .then(instance=>{document.getElementById('loading').style.display='none';canvas.focus();document.getElementById('fullscreen').onclick=()=>{instance.SetFullscreen(1);canvas.focus();};})
+    .catch(error=>{document.getElementById('message').textContent='The station link could not start. Try an up-to-date desktop browser. '+error;});
+  loader.onerror=()=>{document.getElementById('message').textContent='Game files could not load. Serve this folder over HTTPS or a local web server; opening index.html directly is not supported.';};
+  canvas.addEventListener('pointerdown',()=>canvas.focus());document.body.appendChild(loader);
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+PASS: Unity Play Mode; injected Q/1/2/3/R/F3 keyboard events; UI raycasts and pointer-handler dispatch for all five HUD buttons; equal/marked/amplified/overshoot states; successful and missed weighted LOCK; collapse; repeated resets; preserved movement, dodge and E inspection.
+LIMIT: native mouse-event injection in the hidden batch editor was unreliable; physical mouse interaction and a WebGL player build were not verified.
