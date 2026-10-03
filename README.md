@@ -57,9 +57,9 @@ Subtitles and sound effects ship by default. Ananya, Lubna, Anirudh, Tara, ANVES
 
 ## Team
 
-- Team: **[ADD TEAM NAME]**
-- Members: **[ADD MEMBER NAMES]**
-- Event: **[ADD HACKATHON / EVENT]**
-- Tools: Unity / URP / Codex-assisted development
+- Team: **Ignotus**
+- Members: **Devineni Adhyumna Chowdary, Tejaswini Jeelakapally**
+- Event: **Quantum Game Hackathon**
+- Tools: Unity 6 / Universal Render Pipeline / WebGL / AI-assisted development (Codex & Antigravity)
 
 Final manual smoke-test and recording checklist: [Docs/SUBMISSION_CHECKLIST.md](Docs/SUBMISSION_CHECKLIST.md).

@@ -48,6 +48,16 @@ namespace NullSignal.Presentation
             buttons[0].onClick.AddListener(Scan); buttons[1].onClick.AddListener(Mark);
             buttons[2].onClick.AddListener(Amplify); buttons[3].onClick.AddListener(Lock);
             buttons[4].onClick.AddListener(ResetEncounter);
+            string[] names = { "SCAN", "MARK", "AMPLIFY", "LOCK", "RESET" };
+            string[] keys = { "Q", "1", "2", "3", "R" };
+            for (int i = 0; i < buttons.Length && i < names.Length; i++)
+            {
+                if (buttons[i] == null) continue;
+                foreach (var txt in buttons[i].GetComponentsInChildren<Text>(true))
+                {
+                    if (txt.text == names[i]) txt.text = $"{names[i]} [{keys[i]}]";
+                }
+            }
             showDebug = false; Refresh();
         }
         private void OnDisable()

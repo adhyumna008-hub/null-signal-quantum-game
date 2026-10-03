@@ -318081,7 +318081,7 @@ GameObject:
   - component: {fileID: 1273604518}
   - component: {fileID: 1273604517}
   m_Layer: 0
-  m_Name: "TEAM NAME: [EDIT IN README]\nTEAM MEMBERS: [ADD NAMES]\nEVENT: [ADD HACKATHON]\n\nUnity 6 / Universal Render Pipeline / WebGL\nOriginal procedural geometry and animation\nInter typeface \u2014 SIL Open Font License\nAI-assisted development with Codex\nVoice credits: add when recordings are supplied"
+  m_Name: "TEAM: Ignotus\nMEMBERS: Devineni Adhyumna Chowdary, Tejaswini Jeelakapally\nEVENT: Quantum Game Hackathon\n\nUnity 6 / Universal Render Pipeline / WebGL\nOriginal procedural geometry and animation\nInter typeface \u2014 SIL Open Font License\nNeural TTS multi-character voiceovers\nAI-assisted development with Codex & Antigravity"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -318126,7 +318126,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "TEAM NAME: [EDIT IN README]\nTEAM MEMBERS: [ADD NAMES]\nEVENT: [ADD HACKATHON]\n\nUnity 6 / Universal Render Pipeline / WebGL\nOriginal procedural geometry and animation\nInter typeface \u2014 SIL Open Font License\nAI-assisted development with Codex\nVoice credits: add when recordings are supplied"
+  m_text: "TEAM: Ignotus\nMEMBERS: Devineni Adhyumna Chowdary, Tejaswini Jeelakapally\nEVENT: Quantum Game Hackathon\n\nUnity 6 / Universal Render Pipeline / WebGL\nOriginal procedural geometry and animation\nInter typeface \u2014 SIL Open Font License\nNeural TTS multi-character voiceovers\nAI-assisted development with Codex & Antigravity"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 199640380e23d3344936f6e6c22eec7a, type: 2}
   m_sharedMaterial: {fileID: 4828184020849621699, guid: 199640380e23d3344936f6e6c22eec7a, type: 2}

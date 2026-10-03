@@ -5,8 +5,8 @@ namespace NullSignal.Presentation
     [RequireComponent(typeof(AudioSource))]
     public sealed class StationFeedbackAudio : MonoBehaviour
     {
-        private AudioSource source, ambience;
-        private AudioClip servo, pulse, charge, release, warning, scan, mark, collapse, dodge, attack, hit, alarm, shutdown, success, roomTone;
+        private AudioSource source, ambience, storySource, gameplaySource;
+        private AudioClip servo, pulse, charge, release, warning, scan, mark, collapse, dodge, attack, hit, alarm, shutdown, success, roomTone, storyMusic, gameplayMusic;
         [SerializeField] private DialogueAudioPlayback voice;
         private bool muted, paused, effectivePause, cinematic, ending, silent;
         private float lastThreat = -10f;
@@ -29,10 +29,23 @@ namespace NullSignal.Presentation
             shutdown = Effect("Core power down", 1.8f, 440f, 36f, .10f);
             success = Effect("Access granted", .33f, 550f, 825f, .01f);
             roomTone = RoomTone();
+            storyMusic = StoryMusic();
+            gameplayMusic = GameplayMusic();
+
             var emitter = new GameObject("Station ambience / dialogue ducking"); emitter.transform.SetParent(transform, false);
             ambience = emitter.AddComponent<AudioSource>(); ambience.playOnAwake = false; ambience.loop = true;
             ambience.spatialBlend = 0f; ambience.priority = 220; ambience.clip = roomTone; ambience.volume = .10f;
-            muted = PlayerPrefs.GetInt("NullSignal.AudioMuted", 0) != 0; ApplyMute(); ambience.Play();
+
+            var mStory = new GameObject("Story music layer"); mStory.transform.SetParent(transform, false);
+            storySource = mStory.AddComponent<AudioSource>(); storySource.playOnAwake = false; storySource.loop = true;
+            storySource.spatialBlend = 0f; storySource.priority = 200; storySource.clip = storyMusic; storySource.volume = 0f;
+
+            var mGame = new GameObject("Gameplay music layer"); mGame.transform.SetParent(transform, false);
+            gameplaySource = mGame.AddComponent<AudioSource>(); gameplaySource.playOnAwake = false; gameplaySource.loop = true;
+            gameplaySource.spatialBlend = 0f; gameplaySource.priority = 205; gameplaySource.clip = gameplayMusic; gameplaySource.volume = 0f;
+
+            muted = PlayerPrefs.GetInt("NullSignal.AudioMuted", 0) != 0; ApplyMute();
+            ambience.Play(); storySource.Play(); gameplaySource.Play();
         }
         public void Door() => Play(servo, .75f);
         public void Pulse() => Play(pulse, .55f);
@@ -60,25 +73,45 @@ namespace NullSignal.Presentation
         public void SetMuted(bool value)
         { muted = value; PlayerPrefs.SetInt("NullSignal.AudioMuted", value ? 1 : 0); ApplyMute(); }
         public void SetPaused(bool value) { paused = value; RefreshPause(); }
-        private void ApplyMute() { if (source != null) source.mute = muted; if (ambience != null) ambience.mute = muted; }
+        private void ApplyMute()
+        {
+            if (source != null) source.mute = muted;
+            if (ambience != null) ambience.mute = muted;
+            if (storySource != null) storySource.mute = muted;
+            if (gameplaySource != null) gameplaySource.mute = muted;
+        }
         private void Play(AudioClip clip, float gain)
         { if (source != null && clip != null && !effectivePause && Time.timeScale > 0f) source.PlayOneShot(clip, gain); }
         private void Update()
         {
             RefreshPause();
-            if (ambience == null || effectivePause) return;
-            float level = silent ? 0f : cinematic ? ending ? .075f : .15f : .10f;
-            if (voice != null && voice.IsSpeaking) level *= .35f;
-            ambience.volume = Mathf.MoveTowards(ambience.volume, level, Time.unscaledDeltaTime * .12f);
-            ambience.pitch = Mathf.MoveTowards(ambience.pitch, cinematic && ending ? .82f : 1f, Time.unscaledDeltaTime * .1f);
+            if (effectivePause) return;
+            if (ambience != null)
+            {
+                float level = silent ? 0f : cinematic ? ending ? .075f : .15f : .10f;
+                if (voice != null && voice.IsSpeaking) level *= .35f;
+                ambience.volume = Mathf.MoveTowards(ambience.volume, level, Time.unscaledDeltaTime * .12f);
+                ambience.pitch = Mathf.MoveTowards(ambience.pitch, cinematic && ending ? .82f : 1f, Time.unscaledDeltaTime * .1f);
+            }
+            // Dynamic music crossfade: story music for cinematic/menu, gameplay music during exploration
+            float targetStory = silent ? 0f : cinematic ? 0.22f : 0f;
+            float targetGameplay = silent ? 0f : cinematic ? 0f : 0.12f;
+            if (voice != null && voice.IsSpeaking)
+            {
+                targetStory *= 0.40f;
+                targetGameplay *= 0.40f;
+            }
+            float dt = Time.unscaledDeltaTime * 0.6f;
+            if (storySource != null) storySource.volume = Mathf.MoveTowards(storySource.volume, targetStory, dt);
+            if (gameplaySource != null) gameplaySource.volume = Mathf.MoveTowards(gameplaySource.volume, targetGameplay, dt);
         }
         private void RefreshPause()
         {
             bool next = paused || Time.timeScale <= 0f;
             if (next == effectivePause || source == null) return;
             effectivePause = next;
-            if (next) { source.Pause(); ambience?.Pause(); }
-            else { source.UnPause(); ambience?.UnPause(); }
+            if (next) { source.Pause(); ambience?.Pause(); storySource?.Pause(); gameplaySource?.Pause(); }
+            else { source.UnPause(); ambience?.UnPause(); storySource?.UnPause(); gameplaySource?.UnPause(); }
         }
         private static AudioClip MakeClip(string name, float duration, float frequency, bool mechanical)
         {
@@ -123,11 +156,49 @@ namespace NullSignal.Presentation
             }
             AudioClip clip = AudioClip.Create("Astra-7 / restrained machinery bed", length, 1, rate, false); clip.SetData(data, 0); return clip;
         }
+        private static AudioClip StoryMusic()
+        {
+            const int rate = 22050, length = rate * 4;
+            float[] data = new float[length];
+            for (int i = 0; i < length; i++)
+            {
+                float t = i / (float)rate;
+                // Whole cycles in 4s: 33Hz (132c), 66Hz (264c), 99Hz (396c)
+                float drone = Mathf.Sin(2f * Mathf.PI * 33f * t) * 0.35f
+                            + Mathf.Sin(2f * Mathf.PI * 66f * t) * 0.18f
+                            + Mathf.Sin(2f * Mathf.PI * 99f * t) * 0.08f;
+                // Tension pulse: 1 pulse per sec
+                float pulse = Mathf.Pow(Mathf.Max(0f, Mathf.Sin(2f * Mathf.PI * 1f * t)), 8f) * 0.22f;
+                // High resonant harmonic: 528Hz (2112c in 4s)
+                float eerie = Mathf.Sin(2f * Mathf.PI * 528f * t + Mathf.Sin(t * 1.57f) * 1.2f) * 0.05f;
+                float edge = Mathf.Min(1f, t / 0.02f) * Mathf.Min(1f, (4f - t) / 0.02f);
+                data[i] = (drone + pulse + eerie) * 0.75f * edge;
+            }
+            AudioClip clip = AudioClip.Create("NULL SIGNAL / Story Tension", length, 1, rate, false); clip.SetData(data, 0); return clip;
+        }
+        private static AudioClip GameplayMusic()
+        {
+            const int rate = 22050, length = rate * 4;
+            float[] data = new float[length];
+            for (int i = 0; i < length; i++)
+            {
+                float t = i / (float)rate;
+                // Ambient pad: A3 (220Hz = 880c), C#4 (277Hz = 1108c), E4 (330Hz = 1320c)
+                float pad = Mathf.Sin(2f * Mathf.PI * 220f * t) * 0.15f
+                          + Mathf.Sin(2f * Mathf.PI * 277f * t) * 0.11f
+                          + Mathf.Sin(2f * Mathf.PI * 330f * t) * 0.09f;
+                float lfo = 0.65f + 0.35f * Mathf.Sin(2f * Mathf.PI * 0.25f * t);
+                float shimmer = Mathf.Sin(2f * Mathf.PI * 1320f * t) * 0.015f * Mathf.Max(0f, Mathf.Sin(2f * Mathf.PI * 0.5f * t));
+                float edge = Mathf.Min(1f, t / 0.02f) * Mathf.Min(1f, (4f - t) / 0.02f);
+                data[i] = (pad * lfo + shimmer) * 0.65f * edge;
+            }
+            AudioClip clip = AudioClip.Create("NULL SIGNAL / Gameplay Ambient", length, 1, rate, false); clip.SetData(data, 0); return clip;
+        }
         private void OnEnable() { if (ambience != null && !ambience.isPlaying) ambience.Play(); }
-        private void OnDisable() { if (source != null) source.Stop(); if (ambience != null) ambience.Stop(); }
+        private void OnDisable() { if (source != null) source.Stop(); if (ambience != null) ambience.Stop(); storySource?.Stop(); gameplaySource?.Stop(); }
         private void OnDestroy()
         {
-            foreach (AudioClip clip in new[] { servo, pulse, charge, release, warning, scan, mark, collapse, dodge, attack, hit, alarm, shutdown, success, roomTone })
+            foreach (AudioClip clip in new[] { servo, pulse, charge, release, warning, scan, mark, collapse, dodge, attack, hit, alarm, shutdown, success, roomTone, storyMusic, gameplayMusic })
                 if (clip != null) Destroy(clip);
         }
     }
