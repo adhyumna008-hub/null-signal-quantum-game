@@ -107,6 +107,7 @@ namespace NullSignal.Editor
             PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
             PlayerSettings.WebGL.decompressionFallback = false;
             PlayerSettings.WebGL.template = "PROJECT:NullSignal";
+            PlayerSettings.WebGL.memorySize = 512;
             PlayerSettings.runInBackground = false;
         }
         [MenuItem("Tools/NULL SIGNAL/Build Final WebGL")]

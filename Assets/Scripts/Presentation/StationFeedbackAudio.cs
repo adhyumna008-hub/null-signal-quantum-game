@@ -158,38 +158,38 @@ namespace NullSignal.Presentation
         }
         private static AudioClip StoryMusic()
         {
-            const int rate = 22050, length = rate * 4;
+            const int rate = 11025, length = rate * 2;
             float[] data = new float[length];
             for (int i = 0; i < length; i++)
             {
                 float t = i / (float)rate;
-                // Whole cycles in 4s: 33Hz (132c), 66Hz (264c), 99Hz (396c)
+                // Whole cycles in 2s: 33Hz (66c), 66Hz (132c), 99Hz (198c)
                 float drone = Mathf.Sin(2f * Mathf.PI * 33f * t) * 0.35f
                             + Mathf.Sin(2f * Mathf.PI * 66f * t) * 0.18f
                             + Mathf.Sin(2f * Mathf.PI * 99f * t) * 0.08f;
-                // Tension pulse: 1 pulse per sec
+                // Tension pulse: 1 pulse per sec (2 in 2s)
                 float pulse = Mathf.Pow(Mathf.Max(0f, Mathf.Sin(2f * Mathf.PI * 1f * t)), 8f) * 0.22f;
-                // High resonant harmonic: 528Hz (2112c in 4s)
+                // High resonant harmonic: 528Hz (1056c in 2s)
                 float eerie = Mathf.Sin(2f * Mathf.PI * 528f * t + Mathf.Sin(t * 1.57f) * 1.2f) * 0.05f;
-                float edge = Mathf.Min(1f, t / 0.02f) * Mathf.Min(1f, (4f - t) / 0.02f);
+                float edge = Mathf.Min(1f, t / 0.02f) * Mathf.Min(1f, (2f - t) / 0.02f);
                 data[i] = (drone + pulse + eerie) * 0.75f * edge;
             }
             AudioClip clip = AudioClip.Create("NULL SIGNAL / Story Tension", length, 1, rate, false); clip.SetData(data, 0); return clip;
         }
         private static AudioClip GameplayMusic()
         {
-            const int rate = 22050, length = rate * 4;
+            const int rate = 11025, length = rate * 2;
             float[] data = new float[length];
             for (int i = 0; i < length; i++)
             {
                 float t = i / (float)rate;
-                // Ambient pad: A3 (220Hz = 880c), C#4 (277Hz = 1108c), E4 (330Hz = 1320c)
+                // Ambient pad: A3 (220Hz = 440c), C#4 (277.5Hz = 555c), E4 (330Hz = 660c)
                 float pad = Mathf.Sin(2f * Mathf.PI * 220f * t) * 0.15f
-                          + Mathf.Sin(2f * Mathf.PI * 277f * t) * 0.11f
+                          + Mathf.Sin(2f * Mathf.PI * 277.5f * t) * 0.11f
                           + Mathf.Sin(2f * Mathf.PI * 330f * t) * 0.09f;
-                float lfo = 0.65f + 0.35f * Mathf.Sin(2f * Mathf.PI * 0.25f * t);
-                float shimmer = Mathf.Sin(2f * Mathf.PI * 1320f * t) * 0.015f * Mathf.Max(0f, Mathf.Sin(2f * Mathf.PI * 0.5f * t));
-                float edge = Mathf.Min(1f, t / 0.02f) * Mathf.Min(1f, (4f - t) / 0.02f);
+                float lfo = 0.65f + 0.35f * Mathf.Sin(2f * Mathf.PI * 0.5f * t);
+                float shimmer = Mathf.Sin(2f * Mathf.PI * 1320f * t) * 0.015f * Mathf.Max(0f, Mathf.Sin(2f * Mathf.PI * 1f * t));
+                float edge = Mathf.Min(1f, t / 0.02f) * Mathf.Min(1f, (2f - t) / 0.02f);
                 data[i] = (pad * lfo + shimmer) * 0.65f * edge;
             }
             AudioClip clip = AudioClip.Create("NULL SIGNAL / Gameplay Ambient", length, 1, rate, false); clip.SetData(data, 0); return clip;
