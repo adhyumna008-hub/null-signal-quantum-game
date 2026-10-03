@@ -126,7 +126,7 @@ namespace NullSignal.Editor
             if (report.summary.result != BuildResult.Succeeded) throw new InvalidOperationException("WebGL build failed: " + report.summary.result);
             Debug.Log("NULL SIGNAL WebGL ready: " + Path.GetFullPath("Builds/WebGL"));
         }
-        public static void BuildFromCommandLine() { BuildFinalGame(true); BuildFinalWebGL(); }
+        public static void BuildFromCommandLine() { BuildFinalGame(true); NullSignalVoiceoverImporter.ImportAndConnect(); BuildFinalWebGL(); }
 
         private static RectTransform Panel(Transform parent, string name, Vector2 size)
         {

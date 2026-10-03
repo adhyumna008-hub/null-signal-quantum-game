@@ -1,0 +1,434 @@
+[
+  {
+    "index": 1,
+    "speaker": "LUBNA",
+    "text": "You saw the signal rise, fall, and return. More amplification is not always better.",
+    "cleanText": "You saw the signal rise, fall, and return. More amplification is not always better.",
+    "fileName": "VO_LUBNA_01.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Lubna\\VO_LUBNA_01.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Lubna/VO_LUBNA_01.mp3"
+  },
+  {
+    "index": 2,
+    "speaker": "TARA",
+    "text": "Reactor stable. Security lockdown ahead. Stay ready.",
+    "cleanText": "Reactor stable. Security lockdown ahead. Stay ready.",
+    "fileName": "VO_TARA_02.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_02.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_02.mp3"
+  },
+  {
+    "index": 3,
+    "speaker": "TARA",
+    "text": "Emergency impact detected.",
+    "cleanText": "Emergency impact detected.",
+    "fileName": "VO_TARA_03.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_03.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_03.mp3"
+  },
+  {
+    "index": 4,
+    "speaker": "TARA",
+    "text": "Anirudh? If you're conscious, move. That compartment is losing pressure.",
+    "cleanText": "Anirudh? If you're conscious, move. That compartment is losing pressure.",
+    "fileName": "VO_TARA_04.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_04.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_04.mp3"
+  },
+  {
+    "index": 5,
+    "speaker": "TARA",
+    "text": "Manual release still has power.",
+    "cleanText": "Manual release still has power.",
+    "fileName": "VO_TARA_05.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_05.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_05.mp3"
+  },
+  {
+    "index": 6,
+    "speaker": "TARA",
+    "text": "Local power is failing. Follow that cyan signal.",
+    "cleanText": "Local power is failing. Follow that cyan signal.",
+    "fileName": "VO_TARA_06.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_06.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_06.mp3"
+  },
+  {
+    "index": 7,
+    "speaker": "ANVESH",
+    "text": "Authorization fragmented. Four candidate states.",
+    "cleanText": "Authorization fragmented. Four candidate states.",
+    "fileName": "VO_ANVESH_07.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\ANVESH\\VO_ANVESH_07.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/ANVESH/VO_ANVESH_07.mp3"
+  },
+  {
+    "index": 8,
+    "speaker": "TARA",
+    "text": "Mark the desired signature. Watch what changes.",
+    "cleanText": "Mark the desired signature. Watch what changes.",
+    "fileName": "VO_TARA_08.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_08.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_08.mp3"
+  },
+  {
+    "index": 9,
+    "speaker": "ANANYA",
+    "text": "Watch the wave direction. Then try it yourself.",
+    "cleanText": "Watch the wave direction. Then try it yourself.",
+    "fileName": "VO_ANANYA_09.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Ananya\\VO_ANANYA_09.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Ananya/VO_ANANYA_09.mp3"
+  },
+  {
+    "index": 10,
+    "speaker": "TARA",
+    "text": "Eight possibilities this time. The same procedure applies.",
+    "cleanText": "Eight possibilities this time. The same procedure applies.",
+    "fileName": "VO_TARA_10.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_10.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_10.mp3"
+  },
+  {
+    "index": 11,
+    "speaker": "TARA",
+    "text": "Security lockdown. Keep moving, Anirudh.",
+    "cleanText": "Security lockdown. Keep moving, Anirudh.",
+    "fileName": "VO_TARA_11.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_11.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_11.mp3"
+  },
+  {
+    "index": 12,
+    "speaker": "ANVESH",
+    "text": "Reactor control fragmented. Eight candidate states.",
+    "cleanText": "Reactor control fragmented. Eight candidate states.",
+    "fileName": "VO_ANVESH_12.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\ANVESH\\VO_ANVESH_12.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/ANVESH/VO_ANVESH_12.mp3"
+  },
+  {
+    "index": 13,
+    "speaker": "TARA",
+    "text": "Track the signal through several search cycles.",
+    "cleanText": "Track the signal through several search cycles.",
+    "fileName": "VO_TARA_13.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_13.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_13.mp3"
+  },
+  {
+    "index": 14,
+    "speaker": "TARA",
+    "text": "A larger wave. A higher chance.",
+    "cleanText": "A larger wave. A higher chance.",
+    "fileName": "VO_TARA_14.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_14.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_14.mp3"
+  },
+  {
+    "index": 15,
+    "speaker": "TARA",
+    "text": "Manual release accepted. Keep moving.",
+    "cleanText": "Manual release accepted. Keep moving.",
+    "fileName": "VO_TARA_15.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_15.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_15.mp3"
+  },
+  {
+    "index": 16,
+    "speaker": "ANVESH",
+    "text": "Desired power state measured. Local systems restored.",
+    "cleanText": "Desired power state measured. Local systems restored.",
+    "fileName": "VO_ANVESH_16.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\ANVESH\\VO_ANVESH_16.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/ANVESH/VO_ANVESH_16.mp3"
+  },
+  {
+    "index": 17,
+    "speaker": "ANIRUDH",
+    "text": "So we didn't check all four.",
+    "cleanText": "So we didn't check all four.",
+    "fileName": "VO_ANIRUDH_17.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Anirudh\\VO_ANIRUDH_17.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Anirudh/VO_ANIRUDH_17.mp3"
+  },
+  {
+    "index": 18,
+    "speaker": "TARA",
+    "text": "No.",
+    "cleanText": "No.",
+    "fileName": "VO_TARA_18.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_18.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_18.mp3"
+  },
+  {
+    "index": 19,
+    "speaker": "TARA",
+    "text": "We changed the odds.",
+    "cleanText": "We changed the odds.",
+    "fileName": "VO_TARA_19.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_19.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_19.mp3"
+  },
+  {
+    "index": 20,
+    "speaker": "ANANYA",
+    "text": "Signature marked. The next lab is open.",
+    "cleanText": "Signature marked. The next lab is open.",
+    "fileName": "VO_ANANYA_20.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Ananya\\VO_ANANYA_20.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Ananya/VO_ANANYA_20.mp3"
+  },
+  {
+    "index": 21,
+    "speaker": "TARA",
+    "text": "Calibration accepted. Reactor control is ahead.",
+    "cleanText": "Calibration accepted. Reactor control is ahead.",
+    "fileName": "VO_TARA_21.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_21.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_21.mp3"
+  },
+  {
+    "index": 22,
+    "speaker": "ANANYA",
+    "text": "Core disabled. That violet interference is coming from the next sector.",
+    "cleanText": "Core disabled. That violet interference is coming from the next sector.",
+    "fileName": "VO_ANANYA_22.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Ananya\\VO_ANANYA_22.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Ananya/VO_ANANYA_22.mp3"
+  },
+  {
+    "index": 23,
+    "speaker": "LUBNA",
+    "text": "The manifestations have dispersed. The station is quiet again... for now.",
+    "cleanText": "The manifestations have dispersed. The station is quiet again... for now.",
+    "fileName": "VO_LUBNA_23.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Lubna\\VO_LUBNA_23.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Lubna/VO_LUBNA_23.mp3"
+  },
+  {
+    "index": 24,
+    "speaker": "TARA",
+    "text": "Reactor stabilized. Hold here, Anirudh.",
+    "cleanText": "Reactor stabilized. Hold here, Anirudh.",
+    "fileName": "VO_TARA_24.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_24.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_24.mp3"
+  },
+  {
+    "index": 25,
+    "speaker": "CHHAYA",
+    "text": "Search.",
+    "cleanText": "Search.",
+    "fileName": "VO_CHHAYA_25.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Chhaya\\VO_CHHAYA_25.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Chhaya/VO_CHHAYA_25.mp3"
+  },
+  {
+    "index": 26,
+    "speaker": "TARA",
+    "text": "Anirudh...",
+    "cleanText": "Anirudh...",
+    "fileName": "VO_TARA_26.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_26.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_26.mp3"
+  },
+  {
+    "index": 27,
+    "speaker": "TARA",
+    "text": "You know what to do.",
+    "cleanText": "You know what to do.",
+    "fileName": "VO_TARA_27.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_27.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_27.mp3"
+  },
+  {
+    "index": 28,
+    "speaker": "ANVESH",
+    "text": "Eight manifestations. Shield reformed.",
+    "cleanText": "Eight manifestations. Shield reformed.",
+    "fileName": "VO_ANVESH_28.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\ANVESH\\VO_ANVESH_28.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/ANVESH/VO_ANVESH_28.mp3"
+  },
+  {
+    "index": 29,
+    "speaker": "ANVESH",
+    "text": "Search space expanded. Eight states.",
+    "cleanText": "Search space expanded. Eight states.",
+    "fileName": "VO_ANVESH_29.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\ANVESH\\VO_ANVESH_29.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/ANVESH/VO_ANVESH_29.mp3"
+  },
+  {
+    "index": 30,
+    "speaker": "TARA",
+    "text": "Panel failure. Move clear \\u2014 Space to dodge.",
+    "cleanText": "Panel failure. Move clear \\u2014 Space to dodge.",
+    "fileName": "VO_TARA_30.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_30.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_30.mp3"
+  },
+  {
+    "index": 31,
+    "speaker": "TARA",
+    "text": "Classical diagnostics can test the sectors individually.",
+    "cleanText": "Classical diagnostics can test the sectors individually.",
+    "fileName": "VO_TARA_31.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_31.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_31.mp3"
+  },
+  {
+    "index": 32,
+    "speaker": "ANIRUDH",
+    "text": "No time.",
+    "cleanText": "No time.",
+    "fileName": "VO_ANIRUDH_32.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Anirudh\\VO_ANIRUDH_32.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Anirudh/VO_ANIRUDH_32.mp3"
+  },
+  {
+    "index": 33,
+    "speaker": "TARA",
+    "text": "Then don't search them one by one.",
+    "cleanText": "Then don't search them one by one.",
+    "fileName": "VO_TARA_33.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_33.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_33.mp3"
+  },
+  {
+    "index": 34,
+    "speaker": "TARA",
+    "text": "Target amplitude collapsing.",
+    "cleanText": "Target amplitude collapsing.",
+    "fileName": "VO_TARA_34.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_34.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_34.mp3"
+  },
+  {
+    "index": 35,
+    "speaker": "TARA",
+    "text": "Emergency craft ready. East passage. Move.",
+    "cleanText": "Emergency craft ready. East passage. Move.",
+    "fileName": "VO_TARA_35.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_35.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_35.mp3"
+  },
+  {
+    "index": 36,
+    "speaker": "ANVESH",
+    "text": "Quantum search interface restored.",
+    "cleanText": "Quantum search interface restored.",
+    "fileName": "VO_ANVESH_36.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\ANVESH\\VO_ANVESH_36.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/ANVESH/VO_ANVESH_36.mp3"
+  },
+  {
+    "index": 37,
+    "speaker": "TARA",
+    "text": "Good. You'll need that.",
+    "cleanText": "Good. You'll need that.",
+    "fileName": "VO_TARA_37.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_37.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_37.mp3"
+  },
+  {
+    "index": 38,
+    "speaker": "TARA",
+    "text": "Checkpoint restored. You're still in the same sector.",
+    "cleanText": "Checkpoint restored. You're still in the same sector.",
+    "fileName": "VO_TARA_38.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_38.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_38.mp3"
+  },
+  {
+    "index": 39,
+    "speaker": "LUBNA",
+    "text": "Background search complete.",
+    "cleanText": "Background search complete.",
+    "fileName": "VO_LUBNA_39.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Lubna\\VO_LUBNA_39.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Lubna/VO_LUBNA_39.mp3"
+  },
+  {
+    "index": 40,
+    "speaker": "ANANYA",
+    "text": "Again.",
+    "cleanText": "Again.",
+    "fileName": "VO_ANANYA_40.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Ananya\\VO_ANANYA_40.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Ananya/VO_ANANYA_40.mp3"
+  },
+  {
+    "index": 41,
+    "speaker": "LUBNA",
+    "text": "That signal was barely there.",
+    "cleanText": "That signal was barely there.",
+    "fileName": "VO_LUBNA_41.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Lubna\\VO_LUBNA_41.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Lubna/VO_LUBNA_41.mp3"
+  },
+  {
+    "index": 42,
+    "speaker": "ANANYA",
+    "text": "One more iteration.",
+    "cleanText": "One more iteration.",
+    "fileName": "VO_ANANYA_42.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Ananya\\VO_ANANYA_42.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Ananya/VO_ANANYA_42.mp3"
+  },
+  {
+    "index": 43,
+    "speaker": "UNKNOWN SIGNAL",
+    "text": "You found me.",
+    "cleanText": "You found me.",
+    "fileName": "VO_UNKNOWN_SIGNAL_43.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Chhaya\\VO_UNKNOWN_SIGNAL_43.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Chhaya/VO_UNKNOWN_SIGNAL_43.mp3"
+  },
+  {
+    "index": 44,
+    "speaker": "TARA",
+    "text": "Emergency retrieval protocol active.",
+    "cleanText": "Emergency retrieval protocol active.",
+    "fileName": "VO_TARA_44.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\TARA\\VO_TARA_44.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/TARA/VO_TARA_44.mp3"
+  },
+  {
+    "index": 45,
+    "speaker": "ANIRUDH",
+    "text": "Find the Core. Shut it down.",
+    "cleanText": "Find the Core. Shut it down.",
+    "fileName": "VO_ANIRUDH_45.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Anirudh\\VO_ANIRUDH_45.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Anirudh/VO_ANIRUDH_45.mp3"
+  },
+  {
+    "index": 46,
+    "speaker": "ANIRUDH",
+    "text": "I destroyed the Array.",
+    "cleanText": "I destroyed the Array.",
+    "fileName": "VO_ANIRUDH_46.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Anirudh\\VO_ANIRUDH_46.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Anirudh/VO_ANIRUDH_46.mp3"
+  },
+  {
+    "index": 47,
+    "speaker": "UNKNOWN SIGNAL",
+    "text": "You destroyed one.",
+    "cleanText": "You destroyed one.",
+    "fileName": "VO_UNKNOWN_SIGNAL_47.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Chhaya\\VO_UNKNOWN_SIGNAL_47.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Chhaya/VO_UNKNOWN_SIGNAL_47.mp3"
+  },
+  {
+    "index": 48,
+    "speaker": "UNKNOWN SIGNAL",
+    "text": "Now we know how to search back.",
+    "cleanText": "Now we know how to search back.",
+    "fileName": "VO_UNKNOWN_SIGNAL_48.mp3",
+    "fullPath": "D:\\Game\\UNITY\\NullSignal\\Assets\\Audio\\Voice\\Chhaya\\VO_UNKNOWN_SIGNAL_48.mp3",
+    "unityRelativePath": "Assets/Audio/Voice/Chhaya/VO_UNKNOWN_SIGNAL_48.mp3"
+  }
+]
